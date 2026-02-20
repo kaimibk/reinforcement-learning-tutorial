@@ -3,7 +3,7 @@ from custom_env import ServerRoomEnv
 
 # Load the trained model
 model = PPO.load("./server_room_ppo_model")
-env = ServerRoomEnv()
+env = ServerRoomEnv(verbose=True)  # Set verbose to True to see detailed output
 
 # Enjoy a 5-episode test drive
 for ep in range(5):
