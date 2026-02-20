@@ -126,7 +126,7 @@ class ServerRoomEnv(gym.Env):
 
 if __name__ == "__main__":
     # Instantiate our new environment
-    env = ServerRoomEnv()
+    env = ServerRoomEnv(verbose=True) # Set verbose to True to see detailed output
 
     # Reset the environment to start
     obs, info = env.reset()
