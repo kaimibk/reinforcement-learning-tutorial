@@ -143,10 +143,13 @@ if __name__ == "__main__":
         while not done:
             # Sample a random action from the action space (0, 1, or 2)
             action = env.action_space.sample()
-            # Force the same action
-            # action = 1 # Do Nothing (for testing)
+
             # Replace with your policy function later
             # action = my_cool_policy(obs)
+
+            # Force the same action
+            # action = 1 # Do Nothing (for testing)
+            
             # Add keyboard input for manual control (optional)
             # action = int(input("Enter action (0=Cool, 1=Do Nothing, 2=Heat): "))
 
